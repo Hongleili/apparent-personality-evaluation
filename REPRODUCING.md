@@ -64,6 +64,9 @@ evaluator has its own minimal requirements.
 2. **Linear baselines:** run_baselines.main(feature_run, manifests, output)
    fits only on training data and selects ridge alpha using validation MSE.
    baseline_uncertainty/analyse.py uses retained predictions.
+   The separate neural-head comparison is implemented by
+   paired_uncertainty/paired_seed_analysis.py, including crossed bootstrap
+   intervals and exact paired seed sign-flip tests.
 3. **Frame ablation:** run_ablation.py uses the original feature cache and
    matching official manifests. See its function signature and protocol.
 4. **Source-separated CLIP:** prepare_protocol.py creates the first frozen

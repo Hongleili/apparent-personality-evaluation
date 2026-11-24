@@ -14,7 +14,7 @@ predictions, generated responses and model weights are not redistributed.
 
 [Download the complete research-code-results.zip archive](research-code-results.zip),
 unzip it, and work inside the apparent-personality-evaluation folder. All paths
-below refer to that extracted folder. It contains 47 Python scripts and 158 files
+below refer to that extracted folder. It contains 48 Python scripts and 161 files
 in total. The standalone [prediction evaluator](evaluate_partition.py) and
 [its requirements](requirements-evaluation.txt) are also available directly here.
 [ARCHIVE_SHA256.txt](ARCHIVE_SHA256.txt) verifies the archive; the included
@@ -24,7 +24,7 @@ SHA256SUMS.json verifies its individual files.
 
 | Experiment | Code directory under outputs/ | Evidence under results/ |
 |---|---|---|
-| ChaLearn frozen CLIP, six regression heads, five training seeds | colab_rerun | five_seed_results |
+| ChaLearn frozen CLIP, six regression heads, five training seeds and paired uncertainty | colab_rerun, paired_uncertainty | five_seed_results, paired_uncertainty |
 | Linear/ridge baselines and paired uncertainty | linear_baselines, baseline_uncertainty | Matching folders |
 | Frame ablation | chalearn_frame_ablation | Matching folder |
 | Source-separated CLIP and random-clip controls, five partitions | chalearn_source_disjoint, chalearn_source_replication | chalearn_source_replication |
